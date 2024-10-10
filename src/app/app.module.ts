@@ -19,18 +19,17 @@ import { ListOfProfilesComponent } from './components/list-of-profiles/list-of-p
     ProfileDetailComponent,
     ProfileSwipeComponent,
     ListOfProfilesComponent,
-    // add other components here
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HammerModule,
     BrowserAnimationsModule,
-    MatToolbarModule,   // Importing Angular Material Toolbar
-    MatButtonModule,    // Importing Angular Material Button
-    MatCardModule,      // Importing Angular Material Card
+    MatToolbarModule,   
+    MatButtonModule,    
+    MatCardModule,      
     MatIconModule,
-    HttpClientModule    // Importing HttpClientModule
+    HttpClientModule    
   ],
   providers: [],
   bootstrap: [AppComponent]

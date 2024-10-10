@@ -74,7 +74,7 @@
     color: #666;
   }
   
-  /* Actions Section Styling */
+
   .actions {
     display: flex;
     justify-content: space-between;
@@ -89,8 +89,7 @@
     justify-content: space-around;
     gap: 20px;
   }
-  
-  /* Styling for Like, Dislike, and Shortlist */
+
   .shortlist-btn {
     font-size: 16px;
     border: none;
@@ -106,7 +105,7 @@
     margin-right: 25px;
   }
   
-  /* Like and Dislike Buttons */
+
   button[mat-icon-button] {
     background-color: #f0f0f0;
     border-radius: 50%;
@@ -128,18 +127,15 @@
   button[mat-icon-button] mat-icon {
     font-size: 24px;
   }
-  
-  /* Dislike Button (X Icon) */
+
   button[mat-icon-button]:nth-child(1) mat-icon {
     color: #f44336;
   }
   
-  /* Like Button (Check Icon) */
   button[mat-icon-button]:nth-child(3) mat-icon {
     color: #4caf50;
   }
-  
-  /* Shortlist Button */
+
   .shortlist-btn {
     font-size: 16px;
     color: #ff9800;
@@ -153,8 +149,7 @@
   .shortlist-btn:hover {
     color: #e68900;
   }
-  
-  /* Swipe Message Styling */
+
   .swipe-message {
     font-size: 18px;
     color: green;

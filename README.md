@@ -25,3 +25,27 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+
+## Matrimony Application
+
+This is a Matrimony built with Angular, designed to manage and display user profiles. The application features a carousel for viewing profiles, detailed views for each profile, and a swipe component for interactive profile management.
+
+## Features
+
+- **List of Profiles**: View all available pending profiles in a carousel format.
+- **Profile Detail**: View detailed information about each profile upon selection of "Yes" from LIst-of pending profiles component.
+- **Profile Swipe**: An interactive feature for swiping through profiles based on daily recommendations.
+- **Navigation Bar**: Easy navigation between the list of profiles, profile detail, and profile swipe components.
+
+**Routing-path** : /list-profiles -> For pending profiles -> on click of yes we will be opening -> profile detail component as well
+                 : /profile-swipe -> Daily-recommendation -> profiles which are shown in daily-recommendations  -> Default route
+                 
+
+## Technologies Used
+
+- **Angular**: Front-end framework for building the application.
+- **Angular Material**: For UI components and design.
+- **TypeScript**: Superset of JavaScript for type safety.
+- **HTML/CSS**: For structuring and styling the application.

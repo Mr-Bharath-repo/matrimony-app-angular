@@ -13,10 +13,8 @@ export class ProfileDetailComponent implements OnInit {
   constructor(private route: ActivatedRoute, private profileService: ProfileService) {}
 
   ngOnInit(): void {
-    // Get the profile ID from the route parameters
     const profileId = +this.route.snapshot.paramMap.get('id')!;
 
-    // Fetch the profile details using the profile service
     this.profileService.getProfiles().subscribe(profiles => {
       this.profile = profiles.find(p => +p.id === profileId);
     });

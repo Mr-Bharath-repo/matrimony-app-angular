@@ -1,5 +1,7 @@
 <div class="profile-swipe-container">
+  <h1>Daily-Recommendations</h1>
   <div class="card" *ngIf="currentProfile">
+   
     <div class="image-container">
       <img
         [src]="currentProfile.image"
@@ -7,17 +9,17 @@
         class="profile-image"
       />
 
-      <!-- Tags next to the image -->
+      
       <div class="tags">
         <span *ngIf="currentProfile.verified" class="verified-tag"
           >Verified</span
         >
         <span *ngIf="currentProfile.premiumNri" class="premium-tag"
-          >Premium NRI</span
-        >
+          >Premium NRI</span>
+        
       </div>
 
-      <!-- Profile counter -->
+     
       <div class="image-counter">
         {{ currentIndex + 1 }}/{{ profiles.length }}
       </div>
@@ -40,18 +42,15 @@
     gap: 20px;">
           <button mat-icon-button (click)="onLike()">
             <mat-icon>check</mat-icon>
-            <!-- Like icon -->
           </button>
           <button mat-icon-button (click)="onDislike()">
             <mat-icon>close</mat-icon>
-            <!-- Dislike icon -->
-          </button>
+              </button>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Actions Section -->
 
   <!-- <div *ngIf="message" class="swipe-message">{{ message }}</div> -->
 </div>

@@ -20,16 +20,14 @@ export interface Profile {
   providedIn: 'root',
 })
 export class ProfileService {
-  private profileUrl = 'assets/profiles.json';  // Path to JSON file
+  private profileUrl = 'assets/profiles.json';  
 
   constructor(private http: HttpClient) {}
 
-  // Fetch all profiles
   getProfiles(): Observable<Profile[]> {
     return this.http.get<Profile[]>(this.profileUrl);
   }
 
-  // Fetch a profile by its ID
   getProfileById(id: string): Observable<Profile | undefined> {
     return this.http.get<Profile[]>(this.profileUrl).pipe(
       map((profiles) => profiles.find(profile => profile.id === id))

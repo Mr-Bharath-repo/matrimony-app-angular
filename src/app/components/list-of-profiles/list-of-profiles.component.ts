@@ -41,7 +41,6 @@ export class ListOfProfilesComponent implements OnInit {
 
   showAlert(action: string): void {
     if (action === 'Yes') {
-      // Navigate to the profile detail page using the profile ID
       this.router.navigate(['/profile-detail', this.visibleProfile.id]);
     } else {
       alert(action + ' selected');

@@ -1,4 +1,10 @@
 <mat-toolbar color="primary">
   <span>{{ title }}</span>
+  <span class="spacer"></span>
+</mat-toolbar>
+<mat-toolbar color="primary">
+  <a mat-button routerLink="/list-profiles">List of Profiles</a>
+  <a mat-button routerLink="/profile-swipe">Profile Swipe</a>
+  <a mat-button routerLink="/profile-detail/1">Profile Detail</a>
 </mat-toolbar>
 <router-outlet></router-outlet>

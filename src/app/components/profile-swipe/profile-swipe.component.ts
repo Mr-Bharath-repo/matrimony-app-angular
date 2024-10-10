@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProfileService, Profile } from '../../services/profile.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-profile-swipe',
@@ -11,7 +12,7 @@ export class ProfileSwipeComponent implements OnInit {
   currentIndex = 0;
   currentProfile: Profile | undefined;
 
-  constructor(private profileService: ProfileService) {}
+  constructor(private profileService: ProfileService, private router: Router) {}
 
   ngOnInit(): void {
     this.profileService.getProfiles().subscribe(profiles => {
@@ -39,7 +40,9 @@ export class ProfileSwipeComponent implements OnInit {
     if (this.currentIndex < this.profiles.length) {
       this.currentProfile = this.profiles[this.currentIndex];
     } else {
-      this.currentProfile = undefined; // No more profiles
+      this.currentProfile = undefined; 
+      alert('You have seen all the recommendation for today ');
+      this.router.navigate(['/list-profiles']);
     }
   }
 }

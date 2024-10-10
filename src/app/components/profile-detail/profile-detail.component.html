@@ -1,11 +1,8 @@
 <div class="profile-container">
   <mat-card class="profile-card">
-    <div class="profile-header">
-      <button mat-icon-button>
-        <mat-icon>arrow_back</mat-icon>
-      </button>
+    <!-- <div class="profile-header">
       <span class="profile-id">{{ profile.id }}</span>
-    </div>
+    </div> -->
     
     <div class="profile-image-container">
       <img [src]="profile.image" alt="{{ profile.name }}" class="profile-image" />
@@ -14,8 +11,8 @@
 
     <mat-card-content>
       <h2 class="profile-name">{{ profile.name }}</h2>
-      <p class="profile-details">{{ profile.age }} Yrs, {{ profile.height }}, {{ profile.language }}, {{ profile.community }}</p>
-      <p class="profile-profession">{{ profile.education }}, {{ profile.profession }}, {{ profile.city }}, {{ profile.state }}, {{ profile.country }}</p>
+      <p class="profile-details">{{ profile.age }} Yrs, {{ profile.height }}</p>
+      <p class="profile-profession">{{ profile.occupation }}, {{ profile.city }}, {{ profile.state }}</p>
     </mat-card-content>
   </mat-card>
 </div>
