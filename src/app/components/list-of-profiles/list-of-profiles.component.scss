@@ -1,0 +1,60 @@
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 300px;
+    margin: auto;
+  }
+  
+  .carousel-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .profile-card {
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .profile-avatar {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+  }
+  
+  .verified-tag, .premium-nri-tag {
+    background-color: green;
+    color: white;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+  
+  .carousel-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .prev-btn {
+    position: absolute;
+    left: -60px;
+  }
+  
+  .next-btn {
+    position: absolute;
+    right: -60px;
+  }
+  

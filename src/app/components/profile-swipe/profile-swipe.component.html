@@ -1,0 +1,57 @@
+<div class="profile-swipe-container">
+  <div class="card" *ngIf="currentProfile">
+    <div class="image-container">
+      <img
+        [src]="currentProfile.image"
+        alt="{{ currentProfile.name }}"
+        class="profile-image"
+      />
+
+      <!-- Tags next to the image -->
+      <div class="tags">
+        <span *ngIf="currentProfile.verified" class="verified-tag"
+          >Verified</span
+        >
+        <span *ngIf="currentProfile.premiumNri" class="premium-tag"
+          >Premium NRI</span
+        >
+      </div>
+
+      <!-- Profile counter -->
+      <div class="image-counter">
+        {{ currentIndex + 1 }}/{{ profiles.length }}
+      </div>
+    </div>
+
+    <div class="profile-info">
+      <h2>{{ currentProfile.name }}</h2>
+      <p>
+        {{ currentProfile.age }} Yrs, {{ currentProfile.height }},<br/>
+        {{ currentProfile.occupation }},<br/>
+         {{ currentProfile.city }},
+        {{ currentProfile.state }}
+      </p>
+    </div>
+    <div class="actions">
+      <div class="like-dislike-container">
+        <button mat-button class="shortlist-btn" (click)="onShortlist()">Shortlist</button>
+        <div class="like-text">Like her?</div>
+        <div style="display: flex;
+    gap: 20px;">
+          <button mat-icon-button (click)="onLike()">
+            <mat-icon>check</mat-icon>
+            <!-- Like icon -->
+          </button>
+          <button mat-icon-button (click)="onDislike()">
+            <mat-icon>close</mat-icon>
+            <!-- Dislike icon -->
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Actions Section -->
+
+  <!-- <div *ngIf="message" class="swipe-message">{{ message }}</div> -->
+</div>

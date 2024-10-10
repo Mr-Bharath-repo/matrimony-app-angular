@@ -1,0 +1,30 @@
+<div class="carousel-container mat-elevation-z4">
+    <!-- Previous Button -->
+    <button mat-icon-button (click)="previous()" class="carousel-btn prev-btn">
+      <mat-icon>chevron_left</mat-icon>
+    </button>
+  
+    <!-- Single Profile Card Carousel -->
+    <div class="carousel-wrapper">
+      <mat-card class="profile-card">
+        <mat-card-header>
+          <div mat-card-avatar class="profile-avatar" [style.background-image]="'url(' + visibleProfile.image + ')'"></div>
+        </mat-card-header>
+        <mat-card-content>
+            <mat-card-title>{{ visibleProfile.name }}</mat-card-title>
+            <mat-card-subtitle>{{ visibleProfile.age }} Yrs, {{ visibleProfile.height }}, {{ visibleProfile.occupation }}</mat-card-subtitle>
+          <p>{{ visibleProfile.religion }} - {{ visibleProfile.city }}, {{ visibleProfile.state }}</p>
+        </mat-card-content>
+        <mat-card-actions style="display:flex; justify-content: center;">
+          <button mat-button color="primary" (click)="showAlert('Yes')">Yes</button>
+          <button mat-button color="warn" (click)="showAlert('No')">No</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  
+    <!-- Next Button -->
+    <button mat-icon-button (click)="next()" class="carousel-btn next-btn">
+      <mat-icon>chevron_right</mat-icon>
+    </button>
+  </div>
+  

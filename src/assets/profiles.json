@@ -1,0 +1,67 @@
+[
+  {
+    "id": "1",
+    "name": "Sri Divya",
+    "age": 27,
+    "height": "5 ft 5 in",
+    "occupation": "MBBS Doctor",
+    "religion": "Hindu - Kayastha",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "verified": true,
+    "premiumNri": true,
+    "image": "assets/images/priya.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Priyanka",
+    "age": 27,
+    "height": "5 ft 2 in",
+    "occupation": "MBBS Doctor",
+    "religion": "Tamil - Nair",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "verified": true,
+    "premiumNri": false,
+    "image": "assets/images/tanya.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Mrunal",
+    "age": 27,
+    "height": "5 ft 2 in",
+    "occupation": "MBBS Doctor",
+    "religion": "Tamil - Nair",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "verified": true,
+    "premiumNri": false,
+    "image": "assets/images/mrunal.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Trisha",
+    "age": 27,
+    "height": "5 ft 2 in",
+    "occupation": "MBBS Doctor",
+    "religion": "Tamil - Nair",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "verified": true,
+    "premiumNri": false,
+    "image": "assets/images/trisha.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Vani",
+    "age": 27,
+    "height": "5 ft 2 in",
+    "occupation": "MBBS Doctor",
+    "religion": "Tamil - Nair",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "verified": true,
+    "premiumNri": false,
+    "image": "assets/images/vani.jpg"
+  }
+]
